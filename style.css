@@ -1,0 +1,187 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the cart */
+.cart {
+    max-width: 340px;
+    margin: auto;
+}
+
+/* Divider styling */
+.devider {
+    display: block;
+    margin: 25px 0;
+    width: 100%;
+}
+
+/* Heading within the divider */
+.devider h2 {
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #c8c8c8;
+    color: #007f61;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.devider h2 span {
+    background-color: white;
+    position: relative;
+    top: 10px;
+    padding: 0 10px;
+}
+
+/* Styling for each product option */
+.option {
+    width: 340.734px;
+    border-radius: 3.615px;
+    border: 0.904px solid #c8c8c8;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Header section within each option */
+.option .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    color: #000;
+    font-family: Metropolis;
+    font-size: 14.461px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Left section of the header */
+.option .header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Model details in the header */
+.option .header .model {
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Old model styling */
+.option .header .old-model {
+    color: #9f9f9f;
+}
+
+/* Right section of the header */
+.option .header .header-right {
+    align-self: center;
+}
+
+/* Popularity label styling in the header */
+.option .header .header-right .popularity {
+    color: #007f61;
+    font-family: Inter;
+    font-size: 12.653px;
+    font-weight: 600;
+}
+
+/* Selected option styling */
+.option.selected {
+    border-radius: 3.615px;
+    border: 0.904px solid #007f61;
+    background: #f4fbf9;
+}
+
+/* SVG icon styling */
+.option svg.filled,
+.option.selected svg.unfilled {
+    display: none;
+}
+
+.option.selected svg.filled {
+    display: block;
+}
+
+/* Container for all options */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling for the total section */
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Styling for the "Add to Cart" button */
+button {
+    border-radius: 4px 4px 4px 0;
+    background: #007f61;
+    width: 341px;
+    height: 48px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Copyright footer styling */
+footer.copyright {
+    text-align: right;
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Styling for dropdown/select elements */
+select {
+    width: 72.304px;
+    height: 25.306px;
+    border-radius: 1.808px;
+    border: 0.904px solid #d9d9d9;
+    background: #fff;
+}
+
+/* Styling for table cells and headers */
+table td,
+th {
+    padding: 2px;
+}
+
+/* Header styling for tables */
+th {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Body section of each option initially hidden */
+.option .body {
+    display: none;
+}
+
+/* Display body section when option is selected */
+.option.selected .body {
+    display: block;
+}
